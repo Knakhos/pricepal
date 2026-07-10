@@ -36,20 +36,17 @@ export default function Home() {
 
       {/* Hero */}
       <section className="flex-1 flex flex-col justify-center px-[4.2vw] pt-[4vw] pb-[8vw]">
-        <p className="text-[0.65rem] tracking-[0.25em] uppercase text-brand-blue mb-[3vw] font-sans">
-          01 — AI Shopping Assistant
-        </p>
-
         <h1
           ref={heroRef}
-          className="font-display font-normal leading-[0.92] tracking-[-0.02em] mb-[4vw]"
-          style={{ fontSize: 'clamp(3.5rem, 11.5vw, 10.5rem)' }}
+          className="font-display font-normal tracking-[-0.02em] mb-[4vw]"
+          style={{ lineHeight: 1.05 }}
         >
-          Find the best<br />
-          <span className="italic text-brand-beige/50">price.</span>
-          <br />
-          Trust the right<br />
-          <span className="italic text-brand-beige/50">store.</span>
+          <span style={{ fontSize: 'clamp(3.5rem, 11.5vw, 10.5rem)', display: 'block' }}>
+            Find the best <span className="italic text-brand-beige/50">price.</span>
+          </span>
+          <span style={{ fontSize: 'clamp(2rem, 6.5vw, 6rem)', display: 'block', marginTop: '0.6em' }}>
+            Trust the right <span className="italic text-brand-beige/50">store.</span>
+          </span>
         </h1>
 
         <div className="flex items-center gap-[4vw]">
